@@ -119,21 +119,21 @@ const Home = () => {
             <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYg7fcufCfBSnh-dMTIsfqQiUOX3PDKmBCRuwm8Km-5YLp2mi8uKgWI_o0wHFdDzlJu_NFjx920DwdBlKFLxNiNJSYgFGJBCcFVOtm9x3IzeQuj3HjeDxK-84MHTKeELwNO4N926CoBJRLK3yT6unbxy38YFURu06vtWi175r21hFyLlapxlw12NfHWe1DI4YkYc6bS-KSRsPdgC9QWY-GLdh0Zz8TL5ItL8y_DK-jleYo4R9hzLBtB6IW-yXU2cTJ3y6GcCbKkcmP" alt="Community 2" />
             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
               <span className="font-body text-xs text-white mb-2">@street_vibe</span>
-              <button className="bg-white text-black font-body text-[10px] font-bold py-2 px-4 uppercase w-full">Shop this look</button>
+              <Link to="/shop?aesthetic=Cyberpunk" className="bg-white text-black font-body text-[10px] font-bold py-2 px-4 uppercase w-full text-center">Shop this look</Link>
             </div>
           </div>
           <div className="relative group overflow-hidden bg-surface-container h-[450px]">
             <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-NCKupgfpr4qayeuWvpCuJ1dpNBbtHeYd0Ygc4vfTCA_RZwBIkdWbMTTHqEWJE4L7WjoFBg5SYudLj6aCbaXFuRM0rXLK_j2vuTLoYOoYTyC6YMn_-ciu54O19uJvPUGdXt_vv-4G-DcjCQD66wM0oXqTM5Wtie-H5-mJ2qzdFHQp1F6Jr3Y6ItghO8TomMI5QVdcsJZdsqCpbNS8eM_rr9CNc_9Le5VQuC0jTfXRPEUVA68WEK7mEfrMQ3Iovoa_XPZCMxgoMaDo" alt="Community 3" />
             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
               <span className="font-body text-xs text-white mb-2">@cyber_fit</span>
-              <button className="bg-white text-black font-body text-[10px] font-bold py-2 px-4 uppercase w-full">Shop this look</button>
+              <Link to="/shop?aesthetic=Grunge" className="bg-white text-black font-body text-[10px] font-bold py-2 px-4 uppercase w-full text-center">Shop this look</Link>
             </div>
           </div>
           <div className="relative group overflow-hidden bg-surface-container h-[550px]">
             <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBomc2J-IP9B2j-vF1ZoLey9ZIhKaPKSyO2pEpazv55G611uQjGGx2eElpks5NjwGyWyQJ-zmAn5Y1_4_f4W9dS8uLGXeE0YRUhsI4u2U6LaxqW2iaV6totlSeZkNmmtpC89p65lFRk99ImME-GmMd5FjN8pOqWcTdI6dG0ua_5D7DioCoef_nc2BZVzqFa-i4LU8Vu_5dqY1uwQ7KcFh7-p38O6cZ85Vyc61J39M9uFk6HzAtP7FnYC7CQzqyjvv9iX09fZyh7OwOX" alt="Community 4" />
             <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
               <span className="font-body text-xs text-white mb-2">@night_crawl</span>
-              <button className="bg-white text-black font-body text-[10px] font-bold py-2 px-4 uppercase w-full">Shop this look</button>
+              <Link to="/shop?aesthetic=Y2K" className="bg-white text-black font-body text-[10px] font-bold py-2 px-4 uppercase w-full text-center">Shop this look</Link>
             </div>
           </div>
         </div>
