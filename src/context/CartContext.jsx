@@ -30,6 +30,10 @@ export const CartProvider = ({ children }) => {
     }))
   }
 
+  const clearCart = () => {
+    setCart([])
+  }
+
   const toggleWishlist = (product) => {
     setWishlist(prev => {
       const exists = prev.find(item => item.id === product.id)
@@ -48,6 +52,7 @@ export const CartProvider = ({ children }) => {
       addToCart, 
       removeFromCart, 
       updateQuantity, 
+      clearCart,
       toggleWishlist,
       cartTotal,
       cartCount

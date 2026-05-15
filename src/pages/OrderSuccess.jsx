@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const OrderSuccess = () => {
   return (
-    <div className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 animate-fade-in bg-[#050505]">
+    <div className="min-h-screen pt-24 pb-12 flex flex-col items-center justify-center text-center px-4 animate-fade-in bg-[#050505]">
       <div className="mb-12 relative">
         <div className="absolute inset-0 bg-primary-container/20 blur-[100px] rounded-full"></div>
         <span className="material-symbols-outlined text-[120px] text-primary-container relative z-10 animate-bounce">
