@@ -1,8 +1,16 @@
-import { useCart } from '../context/CartContext'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { useCart } from '../context/CartContext';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Cart = () => {
-  const { cart, removeFromCart, updateQuantity, cartTotal } = useCart()
+  const { cart, removeFromCart, updateQuantity, cartTotal, clearCart } = useCart()
+  const navigate = useNavigate()
+
+  const handleCheckout = () => {
+    // Dummy checkout: just clear and go to success page
+    clearCart()
+    navigate('/order-success')
+  }
 
   if (cart.length === 0) {
     return (
@@ -68,7 +76,7 @@ const Cart = () => {
           ))}
         </div>
 
-        {/* Summary */}
+        {/* Summary & Checkout */}
         <div className="lg:col-span-4 sticky top-32">
           <div className="glass-panel p-8 space-y-8">
             <h2 className="font-headline text-3xl text-white uppercase">Order Summary</h2>
@@ -80,7 +88,7 @@ const Cart = () => {
               </div>
               <div className="flex justify-between font-body text-sm text-on-surface-variant uppercase tracking-widest">
                 <span>Shipping</span>
-                <span className="text-primary-container">Calculated at checkout</span>
+                <span className="text-primary-container">FREE (PROMO)</span>
               </div>
             </div>
 
@@ -89,12 +97,15 @@ const Cart = () => {
               <span className="font-headline text-4xl text-white">${cartTotal.toFixed(2)}</span>
             </div>
 
-            <button className="w-full bg-primary-container text-on-primary-fixed py-6 font-body text-xs font-bold uppercase tracking-[0.2em] hover:brightness-110 transition-all shadow-[0_0_20px_rgba(195,244,0,0.2)]">
-              Proceed to Checkout
+            <button 
+              onClick={handleCheckout}
+              className="w-full bg-primary-container text-on-primary-fixed py-6 font-body text-xs font-bold uppercase tracking-[0.2em] hover:brightness-110 transition-all shadow-[0_0_20px_rgba(195,244,0,0.2)]"
+            >
+              Confirm & Place Order
             </button>
             
             <p className="font-body text-[10px] text-center text-on-surface-variant/50 uppercase tracking-widest">
-              Secured by Trend Drop Global Logistics
+              Digital Streetwear Distribution
             </p>
           </div>
         </div>

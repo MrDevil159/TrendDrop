@@ -8,6 +8,7 @@ import Editorial from './pages/Editorial'
 import Cart from './pages/Cart'
 import Wishlist from './pages/Wishlist'
 import Login from './pages/Login'
+import OrderSuccess from './pages/OrderSuccess'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="cart" element={<Cart />} />
         <Route path="wishlist" element={<Wishlist />} />
         <Route path="login" element={<Login />} />
+        <Route path="order-success" element={<OrderSuccess />} />
       </Route>
     </Routes>
   )
